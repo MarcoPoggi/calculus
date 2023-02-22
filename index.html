@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./public/calculator.png" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Calculus</title>
+</head>
+
+<body>
+  <div id="app">
+    <div id="calculator">
+      <div class="calculator_header">
+        <input type="text" class="calculator_header--output" autofocus="true" placeholder="0">
+        <div class="calculator_header--toolbar">
+          <div class="calculator_header--toolbar_left">
+            <span class="material-symbols-outlined">history</span>
+          </div>
+          <div class="calculator_header--toolbar_right">
+            <span class="material-symbols-outlined button-clear">restart_alt</span>
+            <span class="material-symbols-outlined button-backspace">backspace</span>
+          </div>
+        </div>
+      </div>
+      <div class="calculator--board_container">
+        <button class="board-button-action button-num">7</button>
+        <button class="board-button-action button-num">8</button>
+        <button class="board-button-action button-num">9</button>
+        <button class="board-button-action button-op">÷</button>
+        <button class="board-button-action button-num">4</button>
+        <button class="board-button-action button-num">5</button>
+        <button class="board-button-action button-num">6</button>
+        <button class="board-button-action button-op">x</button>
+        <button class="board-button-action button-num">1</button>
+        <button class="board-button-action button-num">2</button>
+        <button class="board-button-action button-num">3</button>
+        <button class="board-button-action button-op">-</button>
+        <button class="board-button-action button-num">0</button>
+        <button class="board-button-action">.</button>
+        <button class="board-button-action button-op">+</button>
+        <button class="board-button-action">=</button>
+      </div>
+    </div>
+    <div id="calculator_history"></div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#calculator {
+  width: 100%;
+  min-height: 100vh;
+}

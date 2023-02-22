@@ -28,10 +28,9 @@
 
 .board-button-action:last-of-type {
   background-color: #333;
-  font-weight: bold;
 }
 
 .board-button-action:hover {
-  color: #FFF;
+  background-color: #444;
   transition: all 100ms;
 }

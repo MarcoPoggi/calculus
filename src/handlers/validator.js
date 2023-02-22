@@ -6,10 +6,10 @@ export function validateChangeCalc(old_string = "", new_string = "") {
 
 export function validateCalc(string = "") {
   let stringClean = string.replace("÷", "/").replace("%", "/").replace("x", "*")
-  let result = ""
+  let result = null
   try {
     result = eval(stringClean)
-  } catch (error) {
+  } catch (e) {
     result = "Syntax Error"
   }
   return result

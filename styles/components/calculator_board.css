@@ -7,14 +7,14 @@
 }
 
 .board-button-action {
-  background-color: #222;
-  display: flex;
-  border: none;
-  justify-content: center;
   align-items: center;
-  font-size: 32px;
-  cursor: pointer;
+  background-color: #222;
+  border: none;
   color: #FFF;
+  cursor: pointer;
+  display: flex;
+  font-size: 32px;
+  justify-content: center;
 }
 
 

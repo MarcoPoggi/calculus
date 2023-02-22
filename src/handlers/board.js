@@ -16,7 +16,9 @@ export function buttonsCalculator() {
 
   resultButton.addEventListener("click", (_e) => {
     let result = validateCalc(resultOutput.value)
+
     resultOutput.value = result
+    if (result === "Syntax Error") setTimeout(() => resultOutput.value = "", 1000)
   })
 
   // keayboard actions

@@ -1,53 +1,55 @@
 .calculator_header {
+  align-items: center;
+  background-color: #222;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: center;
-  background-color: #222;
-  width: 100%;
   min-height: 40vh;
+  width: 100%;
 }
 
 .calculator_header--output {
-  min-height: 10vh;
-  width: 100%;
-  text-align: right;
-  font-size: 50px;
   background-color: #222;
-  padding: 1em .5em;
   border: none;
-  outline: none;
-  color: #F80;
   caret-color: #222;
+  color: #F80;
+  font-size: 4em;
+  min-height: 10vh;
+  outline: none;
+  padding: 1em .5em;
+  text-align: right;
+  width: 100%;
 }
 
 .calculator_header--toolbar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   min-height: 5vh;
   width: 100%;
-  display: flex;
 }
 
 .calculator_header--toolbar_left,
 .calculator_header--toolbar_right {
-  width: 100%;
-  display: flex;
   align-items: center;
-  padding: 1em 1em;
-  gap: 1.5em;
   color: #5F8;
+  display: flex;
+  justify-content: center;
+  padding: 1em 1em;
+  width: 100%;
 }
 
-.calculator_header--toolbar_right{
-  justify-content: flex-end;
+.calculator_header--toolbar_right {
   color: #F80;
+  grid-column: 4/5;
+  justify-content: space-around;
 }
 
-.calculator_header .material-symbols-outlined{
-  font-size: 40px;
+.calculator_header .material-symbols-outlined {
   cursor: pointer;
+  font-size: 2.5em;
 }
 
-.calculator_header .material-symbols-outlined:hover{
+.calculator_header .material-symbols-outlined:hover {
   color: #FFF;
   transition: all 100ms;
 }

@@ -1,0 +1,38 @@
+.calculator--board_container {
+  border-top: 1px solid #555;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 60vh;
+  width: 100%;
+}
+
+.board-button-action {
+  background-color: #222;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  color: #FFF;
+}
+
+
+.button-num {
+  color: #5F8;
+}
+
+.button-op {
+  color: #F80;
+}
+
+.board-button-action:last-of-type {
+  background-color: #333;
+  font-weight: bold;
+}
+
+.board-button-action:hover {
+  background-color: #444;
+  font-size: 24px;
+  transition: all 100ms;
+}

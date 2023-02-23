@@ -8,14 +8,15 @@ export function buttonsCalculator() {
   [...board.children].forEach((element, index, arr) => {
     if (index !== arr.length - 1) {
       element.addEventListener("click", (_e) => {
-        let newValue = validateChangeCalc(element.textContent, (resultOutput.value + element.textContent))
+        let newValue = validateChangeCalc(resultOutput.value, (resultOutput.value + element.textContent))
         resultOutput.value = newValue
       })
     }
   });
 
   resultButton.addEventListener("click", (_e) => {
-    let result = validateCalc(resultOutput.value)
+    let calc = resultOutput.value
+    let result = validateCalc(calc)
 
     resultOutput.value = result
     if (result === "Syntax Error") setTimeout(() => resultOutput.value = "", 1000)

@@ -1,6 +1,7 @@
-const CALC_REGEXP = /^(\d+(\.\d*)?((?<=\d)[+*/-]|$))*$/
+const CALC_REGEXP = /^(\d+(\.\d*)?((?<=\d)[+x/*÷-]|$))*$/
 
 export function validateChangeCalc(old_string = "", new_string = "") {
+  console.log(new_string)
   return CALC_REGEXP.test(new_string) ? new_string : old_string
 }
 
